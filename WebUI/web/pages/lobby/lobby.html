@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="../../common/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="lobby.css">
+    <script src="../../common/jquery-2.0.3.min.js"></script>
+    <script src="../../common/context-path-helper.js"></script>
+    <script src="lobby.js"></script>
+    <title>Conquest Lobby</title>
+</head>
+<body class="mainLobby" background="../../common/barbieCastle.jpeg">
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3">
+            <div id="username">
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="button">
+                <a href="../../logout">Logout</a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <div class="sidebar">
+                <h3>Online Users</h3>
+                <div class="clearfix">
+                    <div class="inputUser">
+                        <ul id="userslist">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="sidebar">
+                <h3>Available Games</h3>
+                <div class="clearfix">
+                    <div class="input">
+                        <div id="gameslist">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="addNewGame">
+                <h4>Upload a new game</h4>
+                <input id="fileInput" type="file" class="fileInput" accept="text/xml" onchange="loadGameClicked(event)"/>
+            </div>
+        </div>
+        <div class="unitsDiv">
+            <div class="close" onclick="removeUnitsPopUp()">
+                <img src="../../common/close.JPG"/>
+            </div>
+            <div class="unitsData">
+                <div id="unitsList">
+                </div>
+            </div>
+        </div>
+        <div class="boardDiv">
+            <div class="close" onclick="removeBoardPopUp()">
+                <img src="../../common/close.JPG"/>
+            </div>
+            <div class="boardData">
+                <div id="board">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

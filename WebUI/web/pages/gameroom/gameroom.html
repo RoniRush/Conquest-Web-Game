@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="../../common/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="gameroom.css">
+    <script src="../../common/jquery-2.0.3.min.js"></script>
+    <script src="../../common/context-path-helper.js"></script>
+    <script src="gameroom.js"></script>
+    <title>Game Room</title>
+</head>
+<body class="main" background="../../common/barbieCastle.jpeg">
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-4">
+            <div id="hello">
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div id = "gameStat">
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div id="passTurn"></div>
+        </div>
+        <div class="col-md-2">
+            <div id="surrender"></div>
+        </div>
+    </div>
+    <div class="row mainData">
+        <div class = "col-md-2 roundPlayer">
+            <div id = "currentplayer">
+            </div>
+            <h4>          </h4>
+            <div id= "rounds">
+            </div>
+            <h4>           </h4>
+            <div class="sidebar">
+                <div class="clearfix">
+                    <h3>Players:</h3>
+                    <h1>    </h1>
+                    <ol id="playerslist">
+                    </ol>
+                    <br/>
+                    <h3>Observers:</h3>
+                    <h1>    </h1>
+                    <ol id="observerslist">
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 boardCol">
+            <div class="boardData">
+                <div id="board">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="sidebar">
+                <div class="clearfix">
+                    <h3>Game Units</h3>
+                    <h1>    </h1>
+                    <ol id="unitslist">
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="shopDiv">
+            <div class="close" onclick="removeShopPopUp()">
+                <img src="../../common/close.JPG"/>
+            </div>
+            <div class="shopData">
+                    <form id ="shopform" method="GET" action="shop">
+                        <!--<input type="submit" value="BUY"/>-->
+                    </form>
+            </div>
+        </div>
+        <div class="actionOnOwnedDiv">
+            <div class="close" onclick="removeOnOwnedPopUp()">
+                <img src="../../common/close.JPG"/>
+            </div>
+            <div class="actionOnOwnedPopUp">
+                <h4>Your Units</h4>
+                    <div class="row territoryShit">
+                        <ol id="territoryUnits">
+                        </ol>
+                    </div>
+                <h4>Choose Your Action!</h4>
+                <div class="row healAndStrengthen">
+                    <button id= "heal">HEAL</button>
+                    <button id= "strengthen">STRENGTHEN</button>
+                </div>
+            </div>
+        </div>
+        <div class="attackDiv">
+            <div class="close" onclick="removeAttackPopUp()">
+                <img src="../../common/close.JPG"/>
+            </div>
+            <div class="attackPopUp">
+                <h2>ATTACK</h2>
+                <h4>My, how frisky! You've selected an occupied territory</h4>
+                <h4>Let's draw a plan of attack</h4>
+                <br/>
+                <div class="row" id="attackerTuring">
+                </div>
+                <div class="row" id="minMightRequired">
+                </div>
+                <h4>Choose Your Action!</h4>
+                <div class="row luckyAndOrchestrated">
+                    <button id= "lucky">Lucky Strike</button>
+                    <button id= "orchestrated">Orchestrated Assault</button>
+                </div>
+            </div>
+        </div>
+        <div class="concludingDiv">
+            <div class="concludingPopUp">
+                <div class="upperPopUp">
+                    <h2>Turn Report</h2>
+                    <div class="row">
+                        <h4>Army Stationed:</h4>
+                        <ol id="stationedUnits">
+                        </ol>
+                    </div>
+                    <h4 id="lowerPopUp"></h4>
+                    <div class="row">
+                        <div id="messageFromRushkin">
+                        </div>
+                        <div id="okButton">
+                            <button id= "OK" onclick="turnEnd()" class="button">OK</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="winnersDiv">
+        <div class="winnerPopUp">
+            <h4>HURRAY!</h4>
+            <h4>The Game Is OVER!!</h4>
+            <h3>ALL HAIL The all mighty Conqueror. who conquered my heart as well, tee-hee</h3>
+            <h3>Praise Be To:</h3>
+            <div id="winnersNames"></div>
+            <div id="gameIsOverBtn">
+                <button id= "gameOver" onclick="backToLobby()">OK</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

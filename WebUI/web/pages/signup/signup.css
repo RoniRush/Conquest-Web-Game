@@ -1,0 +1,18 @@
+.main{
+    font-size: large;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: cursive;
+    position: relative;
+    text-align: center;
+}
+
+.loginBtn{
+    -webkit-appearance: button;
+    cursor: pointer;
+    -webkit-text-fill-color: magenta;
+    font-weight: bold;
+}
