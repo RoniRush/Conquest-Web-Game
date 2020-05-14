@@ -19,15 +19,15 @@ SCREENS:
 
 1. welcome screen
 
-![alt text](https://github.com/RoniRush/Conquest-Game/blob/master/entryscreen.png?raw=true)
+![alt text](https://github.com/RoniRush/Conquest-Web-Game/blob/master/entryscreen.png?raw=true)
 
 2. login page
 
-![alt text](https://github.com/RoniRush/Conquest-Game/blob/master/loginscreen.png?raw=true)
+![alt text](https://github.com/RoniRush/Conquest-Web-Game/blob/master/loginscreen.png?raw=true)
 
 3. lobby page - here you can see all available games and uploade new games. also you can join existing games (as a player or a viewr), you can see your online friend, and you can loggout
 
-![alt text](https://github.com/RoniRush/Conquest-Game/blob/master/lobbyscreen.png?raw=true)
+![alt text](https://github.com/RoniRush/Conquest-Web-Game/blob/master/lobbyscreen.png?raw=true)
 
 4. game screen - here is where the magic is happened, the game beggins only after the correct amount of players are signed in.
 int this screen you can see all players data (also observers), you have the game board and the data about the available units in the game.
@@ -36,4 +36,4 @@ each turn you can choose -
   * pass turn and do nothing
   * surrender, so you quit the game
   
-![alt text](https://github.com/RoniRush/Conquest-Game/blob/master/gamescreen.png?raw=true)
+![alt text](https://github.com/RoniRush/Conquest-Web-Game/blob/master/gamescreen.png?raw=true)
