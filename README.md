@@ -1,6 +1,9 @@
 # Conquest-Web-Game
 Conquest is a strategy web game developed with java and java script (using HTML and css) , running on tomcat server
 
+before we dive in, there are important setups:
+install java and intelliJ IDEA (it will be easier to use beacuse all the setups i already made in my project), install tomcat 8.5.55, hit run in the inteliJ
+
 In an imaginary world, there is a map of territories that players must occupy. The progression of time in this world is measured in regular cycles instead of events happening. (You can treat the cycle as a round in the game where players perform)
 
 Each surface cell is characterized by the amount of ore that provide a certain yield over each time cycle.
