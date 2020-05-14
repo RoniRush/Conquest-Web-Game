@@ -1,0 +1,177 @@
+
+.unitsDiv {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    max-width: 800px;
+    max-height: 800px;
+    z-index: 1000;
+    display: none;
+    background: lightpink;
+    opacity: 0.95;
+
+    -webkit-box-shadow: 10px 10px 30px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 30px -8px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 30px -8px rgba(0,0,0,0.75);
+
+    animation: fadein 1s;
+}
+
+.boardDiv {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    max-width: 800px;
+    max-height: 800px;
+    z-index: 1000;
+    display: none;
+    background: lightpink;
+    opacity: 0.95;
+    overflow: auto;
+
+    -webkit-box-shadow: 10px 10px 30px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 30px -8px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 30px -8px rgba(0,0,0,0.75);
+
+    animation: fadein 1s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 0.95; }
+}
+
+.unitsData {
+    font-size: 0;
+    overflow: auto;
+    margin: 25px;
+    white-space: nowrap;
+    max-width: 780px;
+    max-height: 600px;
+}
+
+#unitsList {
+    margin: 25px;
+    display: inline-block;
+    vertical-align:top;
+    font-size:13px;
+}
+
+.input{
+    position: relative;
+    left: 20px;
+}
+
+.titleAndStatusCol{
+    padding-left: 0px;
+}
+
+.boardData {
+    font-size: 11px;
+    overflow: auto;
+    margin: 25px;
+    white-space: nowrap;
+    max-width: 780px;
+    max-height: 600px;
+}
+
+.observerBtns{
+    position: relative;
+    left: 10px;
+    -webkit-appearance: button;
+    cursor: pointer;
+    -webkit-text-fill-color: magenta;
+    font-weight: bold;
+}
+
+
+.playerAndObserverBtns
+{
+    position: relative;
+    top: 5px;
+}
+
+.button{
+    cursor: pointer;
+    -webkit-text-fill-color: magenta;
+    font-weight: bold;
+}
+
+.fileInput{
+    cursor: pointer;
+    -webkit-text-fill-color: magenta;
+    font-weight: bold;
+}
+
+.playerBtns{
+    -webkit-appearance: button;
+    cursor: pointer;
+    -webkit-text-fill-color: magenta;
+    font-weight: bold;
+}
+
+
+#board {
+    margin: 25px;
+    display: inline-block;
+    vertical-align:top;
+    font-size:11px;
+}
+
+
+.clickable {
+    cursor: pointer;
+}
+
+.close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+.rowDiv{
+    display: table-row;
+}
+
+.square{
+    display: inline-block;
+    border: 1px black solid;
+    width: 100px;
+    height: 100px;
+}
+
+.squareData{
+    width: 100px;
+    text-align: center;
+}
+
+.rowSquares {
+    display: inline-block;
+}
+
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: cursive;
+}
+
+.mainLobby{
+    /*background-color: antiquewhite;*/
+    font-size: medium;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 25px;
+}
+
+.titleClass{
+    font-weight: bolder;
+}

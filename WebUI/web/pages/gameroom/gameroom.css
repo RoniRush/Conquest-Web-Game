@@ -1,0 +1,315 @@
+.main{
+    font-size: medium;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: cursive;
+}
+
+.boardData {
+    font-size: 11px;
+    overflow: auto;
+    margin: 25px;
+    white-space: nowrap;
+    max-width: 780px;
+    max-height: 600px;
+}
+
+.boardCol{
+    position: relative;
+    text-align: center;
+}
+
+.rowDiv{
+    display: table-row;
+}
+
+#gameStat{
+    font-size: larger;
+}
+
+#hello{
+    font-size: larger;
+}
+
+.square{
+    display: inline-block;
+    border: 1px black solid;
+    width: 100px;
+    height: 100px;
+}
+
+#orchestrated{
+    position: relative;
+    left: 30px;
+}
+
+.colorSquare{
+    display: inline-block;
+    width: 70px;
+    height: 14px;
+}
+
+.squareData{
+    width: 100px;
+    text-align: center;
+}
+
+.rowSquares {
+    display: inline-block;
+}
+
+.roundPlayer{
+    position: relative;
+    top: 1cm;
+    left: 9px;
+}
+
+.mainData{
+    position: relative;
+    top: 1cm;
+}
+
+.button{
+    -webkit-appearance: button;
+    cursor: pointer;
+    -webkit-text-fill-color: magenta;
+    font-weight: bold;
+}
+
+
+.shopDiv {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    max-width: 800px;
+    max-height: 800px;
+    z-index: 1000;
+    display: none;
+    background: lightpink;
+    opacity: 0.95;
+    overflow: auto;
+    flex: 2 0 0;
+    min-height: auto;
+    min-width: auto;
+
+    -webkit-box-shadow: 10px 10px 30px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 30px -8px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 30px -8px rgba(0,0,0,0.75);
+
+    animation: fadein 1s;
+}
+
+.close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+
+.shopData {
+    margin: 25px;
+    display: inline-block;
+    vertical-align:top;
+    font-size: small;
+}
+
+#board{
+    margin: 25px;
+    display: inline-block;
+    vertical-align:top;
+    font-size:11px;
+}
+
+.actionOnOwnedDiv {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    max-width: 800px;
+    max-height: 800px;
+    z-index: 1000;
+    display: none;
+    background: lightpink;
+    opacity: 0.95;
+    overflow: auto;
+
+    -webkit-box-shadow: 10px 10px 30px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 30px -8px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 30px -8px rgba(0,0,0,0.75);
+
+    animation: fadein 1s;
+}
+
+.attackDiv {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    max-width: 800px;
+    max-height: 800px;
+    z-index: 1000;
+    display: none;
+    background: lightpink;
+    opacity: 0.95;
+    overflow: auto;
+
+    -webkit-box-shadow: 10px 10px 30px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 30px -8px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 30px -8px rgba(0,0,0,0.75);
+
+    animation: fadein 1s;
+}
+
+.winnersDiv {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    max-width: 800px;
+    max-height: 800px;
+    z-index: 1000;
+    display: none;
+    background: lightpink;
+    opacity: 0.95;
+    overflow: auto;
+
+    -webkit-box-shadow: 10px 10px 30px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 30px -8px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 30px -8px rgba(0,0,0,0.75);
+
+    animation: fadein 1s;
+}
+
+.winnerPopUp{
+    margin: 25px;
+    display: inline-block;
+    vertical-align:top;
+    font-size: small;
+}
+
+.concludingPopUp{
+    margin: 25px;
+    display: inline-block;
+    vertical-align:top;
+    font-size: medium;
+    position: relative;
+    text-align: center;
+}
+
+.actionOnOwnedPopUp{
+    font-size: small;
+    overflow: auto;
+    margin: 25px;
+    white-space: nowrap;
+    max-width: 780px;
+    max-height: 600px;
+    position: relative;
+    text-align: center;
+}
+
+#winnersNames {
+    margin: 25px;
+    display: inline-block;
+    vertical-align:top;
+    font-size:large;
+}
+
+.concludingDiv {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    max-width: 800px;
+    max-height: 800px;
+    z-index: 1000;
+    display: none;
+    background: lightpink;
+    opacity: 0.95;
+    overflow: auto;
+
+    -webkit-box-shadow: 10px 10px 30px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 30px -8px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 30px -8px rgba(0,0,0,0.75);
+
+    animation: fadein 1s;
+}
+
+
+
+#stationedUnits {
+    margin: 25px;
+    display: inline-block;
+    vertical-align:top;
+    font-size: medium;
+}
+
+#territoryUnits{
+    margin: 25px;
+    display: inline-block;
+    vertical-align:top;
+    font-size: small;
+}
+
+.territoryShit{
+    margin: 25px;
+}
+
+#messageFromRushkin {
+    margin: 25px;
+    display: inline-block;
+    vertical-align:top;
+    font-size: small;
+}
+
+#attackerTuring{
+    margin: 25px;
+    display: inline-block;
+    vertical-align:top;
+    font-size: small;
+}
+
+#minMightRequired{
+    margin: 25px;
+    display: inline-block;
+    vertical-align:top;
+    font-size: small;
+}
+
+.attackPopUp{
+    font-size: small;
+    overflow: auto;
+    margin: 25px;
+    white-space: nowrap;
+    max-width: 780px;
+    max-height: 600px;
+    position: relative;
+    text-align: center;
+}
+
+#strengthen{
+    position: relative;
+    left: 20px;
+}
+
+.luckyAndOrchestrated{
+    margin: 25px;
+}
+
+.healAndStrengthen{
+    margin: 25px;
+}
